@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="truco_mineiro.cenas.MesaJogoController">
+    <stylesheets>
+        <URL value="@/truco_mineiro/css/style.css" />
+    </stylesheets>
+   <children>
+      <Pane id="painel_inicial" prefHeight="505.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="58.0" layoutY="54.0" prefHeight="390.0" prefWidth="690.0" style="-fx-background-color: #ebaf42;" styleClass="btn-play" stylesheets="@../css/style.css">
+               <children>
+                  <Pane id="fundo-mesa" layoutX="46.0" layoutY="29.0" prefHeight="334.0" prefWidth="597.0">
+                     <children>
+                        <Pane layoutX="158.0" layoutY="115.0" prefHeight="104.0" prefWidth="281.0">
+                           <children>
+                              <ImageView fx:id="tableCard1" fitHeight="104.0" fitWidth="69.5" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="tableCard2" fitHeight="104.0" fitWidth="69.5" layoutX="70.5" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="tableCard3" fitHeight="104.0" fitWidth="69.5" layoutX="142.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="tableCard4" fitHeight="104.0" fitWidth="69.5" layoutX="213.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane id="pane4" layoutX="527.0" layoutY="144.0" prefHeight="104.0" prefWidth="210.5" rotate="270.0">
+                     <children>
+                        <ImageView fx:id="card2_1" fitHeight="104.0" fitWidth="69.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card2_2" fitHeight="104.0" fitWidth="69.5" layoutX="70.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card2_3" fitHeight="104.0" fitWidth="69.5" layoutX="141.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-47.0" layoutY="143.0" prefHeight="104.0" prefWidth="210.5" rotate="90.0">
+                     <children>
+                        <ImageView fx:id="card4_3" fitHeight="104.0" fitWidth="69.5" layoutX="141.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card4_1" fitHeight="104.0" fitWidth="69.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card4_2" fitHeight="104.0" fitWidth="69.5" layoutX="70.5" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="241.0" layoutY="7.0" prefHeight="104.0" prefWidth="210.5" rotate="180.0">
+                     <children>
+                        <ImageView fx:id="card3_3" fitHeight="104.0" fitWidth="69.5" layoutX="141.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card3_2" fitHeight="104.0" fitWidth="69.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card3_1" fitHeight="104.0" fitWidth="69.5" layoutX="70.5" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="244.0" layoutY="281.0" prefHeight="104.0" prefWidth="210.5">
+                     <children>
+                        <ImageView fx:id="card1_1" fitHeight="104.0" fitWidth="69.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card1_2" fitHeight="104.0" fitWidth="69.5" layoutX="70.5" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="card1_3" fitHeight="104.0" fitWidth="69.5" layoutX="141.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Label fx:id="pl1" alignment="CENTER" layoutX="381.0" layoutY="465.0" style="-fx-font-weight: 900; -fx-label-padding: 10px;" styleClass="player_name" text="Label" textFill="#ebaf42">
+               <font>
+                  <Font name="Avenir Medium Oblique" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pl4" alignment="CENTER" layoutX="-10.0" layoutY="243.0" rotate="90.0" style="-fx-font-weight: 900; -fx-label-padding: 10px;" styleClass="player_name" text="Label" textFill="#ebaf42">
+               <font>
+                  <Font name="Avenir Medium Oblique" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pl3" alignment="CENTER" layoutX="383.0" rotate="180.0" style="-fx-font-weight: 900; -fx-label-padding: 10px;" styleClass="player_name" text="Label" textFill="#ebaf42">
+               <font>
+                  <Font name="Avenir Medium Oblique" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pl2" alignment="CENTER" layoutX="738.0" layoutY="243.0" rotate="270.0" style="-fx-font-weight: 900; -fx-label-padding: 10px;" styleClass="player_name" text="Label" textFill="#ebaf42">
+               <font>
+                  <Font name="Avenir Medium Oblique" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="pane_pontos" layoutX="800.0" prefHeight="505.0" prefWidth="200">
+         <children>
+            <Pane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: rgb(206,6,6);">
+               <children>
+                  <Label layoutX="73.0" layoutY="7.0" text="Dupla 1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Separator layoutX="41.0" layoutY="32.0" prefWidth="120.0" />
+                  <Separator layoutX="40.0" layoutY="73.0" prefWidth="120.0" />
+                  <Label layoutX="41.0" layoutY="47.0" text="Pontos :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="47.0" text="0" fx:id="pontos1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="150.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: rgb(220,220,220);">
+               <children>
+                  <Label layoutX="72.0" layoutY="11.0" text="Dupla 2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Separator layoutX="39.0" layoutY="32.0" prefWidth="120.0" />
+                  <Separator layoutX="39.0" layoutY="77.0" prefWidth="120.0" />
+                  <Label layoutX="39.0" layoutY="49.0" text="Pontos :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="50.0" text="0" fx:id="pontos2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="300.0" prefHeight="205.0" prefWidth="200.0" style="-fx-background-color: rgb(5,154,65);">
+               <children>
+                  <RadioButton fx:id="Fechada" layoutX="62.0" layoutY="173.0" mnemonicParsing="false" text="Fechada">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Button fx:id="Truco" layoutX="21.0" layoutY="28.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Truco" />
+                  <Button fx:id="Seis" layoutX="108.0" layoutY="28.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Seis" />
+                  <Button fx:id="Nove" layoutX="21.0" layoutY="75.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Nove" />
+                  <Button fx:id="Doze" layoutX="108.0" layoutY="75.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Doze" />
+                  <Button fx:id="Correr" layoutX="21.0" layoutY="121.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Correr" />
+                  <Button fx:id="Aceitar" layoutX="108.0" layoutY="121.0" mnemonicParsing="false" prefWidth="70.0" styleClass="round-red" stylesheets="@../css/style.css" text="Aceitar" />
+               </children>
+            </Pane>
+        </children>
+      </Pane>
+   </children>
+</AnchorPane>

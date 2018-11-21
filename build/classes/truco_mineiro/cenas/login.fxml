@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="painel_inicial" fx:id="pane2" prefHeight="505.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="truco_mineiro.cenas.LoginController">
+    <stylesheets>
+        <URL value="@/truco_mineiro/css/style.css" />
+    </stylesheets>
+       <children>
+      <Pane id="background-login" layoutX="55.0" layoutY="58.0" prefHeight="390.0" prefWidth="690.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="690.0" />
+            <Label alignment="CENTER" layoutX="208.0" layoutY="7.0" prefHeight="39.0" prefWidth="262.0" text="Nome dos Jogadores" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="144.0" layoutY="116.0" prefHeight="27.0" prefWidth="67.0" text="Dupla 1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="player1" layoutX="241.0" layoutY="91.0" prefWidth="150.0" />
+            <TextField fx:id="player3" layoutX="241.0" layoutY="135.0" prefWidth="150.0" />
+            <TextField fx:id="player2" layoutX="241.0" layoutY="193.0" prefWidth="150.0" />
+            <TextField fx:id="player4" layoutX="241.0" layoutY="237.0" prefWidth="150.0" />
+            <Label alignment="CENTER" layoutX="147.0" layoutY="217.0" prefHeight="27.0" prefWidth="67.0" text="Dupla 2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="291.0" layoutY="336.0" mnemonicParsing="false" onAction="#getNomesDuplas" styleClass="btn-play" stylesheets="@../css/style.css" text="Bora Jogar!" />
+            <Line endX="350.0" layoutX="245.0" layoutY="178.0" startX="-100.0" />
+            <Label alignment="CENTER" layoutX="455.0" layoutY="54.0" prefHeight="27.0" prefWidth="67.0" text="Senha">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="p1_pass" layoutX="419.0" layoutY="91.0" prefWidth="150.0" />
+            <PasswordField fx:id="p2_pass" layoutX="419.0" layoutY="135.0" prefWidth="150.0" />
+            <PasswordField fx:id="p3_pass" layoutX="419.0" layoutY="193.0" prefWidth="150.0" />
+            <PasswordField fx:id="p4_pass" layoutX="419.0" layoutY="237.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
